@@ -1,0 +1,168 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;  
+  box-sizing: border-box;
+  background-image: url("/IMG/papel1.jpg");
+  background-position: center; 
+  background-size: cover;   
+}
+.navbar {
+  background-color: hsla(199, 97%, 47%, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 70px;
+}
+.imgLogo {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+}
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 1.2rem;
+}
+.nav-links li {
+  padding: 15px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #fd7e00;
+}
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fd7e00;
+  cursor: pointer;
+  display: none;
+}
+/* Menu Mobile */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 5;  
+}
+.close-button {
+  position: absolute;
+  top: 20px;
+  background-color: #fd7e00;
+  right: 20px;
+  font-size: 24px; 
+  border: none;
+  color: #232323;
+  cursor: pointer;
+  display: none;
+}
+.nav-links.active .close-button {
+  display: block;
+}
+/* Footer */
+.footer {
+  background-color: #0d8bf1;
+  color: #1f1e1e;
+  text-align: center;
+  padding: 1px;
+  margin: 0;
+  font-size: 0.8rem;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    height: 60px;
+    padding: 5px 15px;
+  }
+  .logo img {
+    width: 80px;  
+}
+}
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    padding: 15px 20px;
+  }  
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Garante que o conteúdo fique centralizado dentro da tela */
+  margin: 15px;
+}
+.reserva-container {  
+  background: #d9fbf9;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+  margin: 30px auto; /* Mantém um espaçamento externo */
+}
+.reserva-imagem img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.reserva-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.reserva-form label {
+  font-weight: bold;
+  text-align: left;
+}
+.reserva-form input, .reserva-form select {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+.data-container {
+  display: flex;
+  gap: 30px;
+}
+.data-container input {
+  flex: 1;
+}
+.reserva-form button {
+  background-color: #000080;
+  color: white;
+  font-size: 1.2rem;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.reserva-form button:hover {
+  background-color: #fd7e00;
+}
