@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WSVIAGENS</title>
+    <link rel="stylesheet" href="/CSS/reserva.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Menu de Navegação -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="/HTML/home.html"><img src="/IMG/Logos/WSVIAGENS.png" alt="Logo da Empresa" class="imgLogo"></a>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="/HTML/home.html">Home</a></li>
+            <li><a href="/HTML/sobre.html">Sobre</a></li>
+            <li><a href="/HTML/reserva.html">Reservas</a></li>
+            <li><a href="/HTML/pacote.html">Pacotes</a></li>
+            <li><a href="/HTML/cadastro.html">Cadastro</a></li>
+            <li><a href="/HTML/contato.html">Contato</a></li>
+        </ul>
+        <button class="hamburger" id="hamburgerButton" aria-expanded="false">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+    <!-- Conteúdo Principal -->
+    <main>
+        <div class="reserva-container">
+            <div class="reserva-imagem">
+                <img src="/IMG/viagens1.webp" alt="Imagem de viagem">
+            </div>
+            <h2>Faça sua Reserva</h2>
+            <form class="reserva-form">
+                <label for="destino">Destino</label>
+                <select id="destino" name="destino">
+                    <option value="#">- - -</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="parana">Paraná</option>
+                    <option value="Nova York">Bahia</option>
+                    <option value="Rio de Janeiro">Amazona</option>
+                    <option value="Rio de Janeiro">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                </select>
+                <div class="data-container">
+                    <div>
+                        <label for="dataIda">Data de Ida</label>
+                        <input type="date" id="dataIda" name="dataIda">
+                    </div>
+                    <div>
+                        <label for="dataVolta">Data de Volta</label>
+                        <input type="date" id="dataVolta" name="dataVolta">
+                    </div>
+                </div>
+                <label for="passageiros">Número de Passageiros</label>
+                <input type="number" id="passageiros" name="passageiros" min="1" value="1">
+
+                <label for="acomodacao">Tipo de Acomodação</label>
+                <select id="acomodacao" name="acomodacao">
+                    <option value="hotel">Hotel</option>
+                    <option value="pousada">Pousada</option>
+                    <option value="resort">Resort</option>
+                    <option value="apartamento">Apartamento</option>
+                </select>
+
+                <label for="transporte">Tipo de Transporte</label>
+                <select id="transporte" name="transporte">
+                    <option value="aereo">Aéreo</option>
+                    <option value="terrestre">Terrestre</option>
+                    <option value="maritimo">Marítimo</option>
+                </select>
+
+                <h3>Informações do Viajante</h3>
+                <label for="nome">Nome Completo</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="cpf">CPF</label>
+                <input type="text" id="cpf" name="cpf" required>
+
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" name="telefone" required>
+
+                <button type="submit">Reservar Agora</button>
+            </form>
+        </div>
+    </main>
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2025 WSVIAGENS. Todos os direitos reservados.</p>
+    </footer>
+    <script src="/JS/script.js" defer></script>
+</body>
+
+</html>
