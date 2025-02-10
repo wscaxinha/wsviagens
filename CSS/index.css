@@ -1,0 +1,144 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+  background-image: url("/IMG/papel3.webp");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+.navbar {
+  background-color: hsla(199, 97%, 47%, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 70px;  
+}
+.imgLogo {
+  max-width: 100%;
+  height: auto;
+  width: 100px;
+}
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  font-size: 1.2rem;
+}
+.nav-links li {
+  padding: 15px;
+}
+.nav-links a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+.nav-links a:hover {
+  color: #fd7e00;
+}
+.hamburger {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: #fd7e00;
+  cursor: pointer;
+  display: none;
+}
+/* Menu Mobile */
+.nav-links.active {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 40%;
+  height: 60vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  z-index: 5;
+}
+.close-button {
+  position: absolute;
+  top: 20px;
+  background-color: #fd7e00;
+  right: 20px;
+  font-size: 24px;
+  border: none;
+  color: #232323;
+  cursor: pointer;
+  display: none;
+}
+.nav-links.active .close-button {
+  display: block;
+}
+/* Footer */
+.footer {
+  background-color: #0d8bf1;
+  color: #1f1e1e;
+  text-align: center;
+  padding: 1px;
+  font-size: 0.8rem;
+  width: 100%;
+  margin-top: auto;
+}
+/* Responsividade */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .navbar {
+    height: 60px;
+    padding: 5px 15px;
+  }
+  .logo img {
+    width: 80px;
+  }  
+}
+@media (max-width: 480px) {
+  .navbar {
+    height: 50px;
+    padding: 15px 20px;
+  } 
+}
+/* Seção principal */
+.secao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b8f9fa;
+  padding: 20px;
+  border-radius: 20px;
+  margin: 30px;
+  flex-wrap: wrap;
+}
+.btn {
+  background-color: #000080;
+  color: #fff;
+  padding: 12px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin: 20px auto;
+  display: block;
+}
+.btn:hover {
+  background-color: #ff7f00;
+}
+.image img {
+  width: 100%;
+  border-radius: 15px;  
+}
