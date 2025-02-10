@@ -1,4 +1,4 @@
-# WSVIAGENS - Planejamento e Desenvolvimento
+# WSVIAGENS - Planejamento e Desenvolvimento - 1ª Entrega
 
 ## 📌 Visão Geral
 O projeto **WSVIAGENS** consiste na criação de um site para uma agência de viagens, oferecendo informações sobre pacotes turísticos, reservas e contato. O objetivo é proporcionar uma experiência intuitiva e interativa para os usuários.
